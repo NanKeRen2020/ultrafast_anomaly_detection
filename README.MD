@@ -19,9 +19,9 @@ developped in [1][2], which has been studied in details in [3]. The running time
 
 for 320*480 image on ubuntu1604 Core i7-8570H 2.2Ghz*12 8G gtx1050 cuda10.0.
 
-This project only open source the original optimizing implementation, the faster version is 
+This project only open source part of the original implement, you can get the full version
 
-another total different patch search approach. 
+codes for free to researchers for non-commercial use via email shengqiang8814@qq.com.
 
 
 detection result image
