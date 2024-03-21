@@ -13,7 +13,7 @@ of the popular pre-trained deep neural network, such as VGG, Resnet, etc.
 # Overview
 
 
-This source code provides an ultrafast implementation of the anomaly detection method 
+This source code provides an ultrafast C/C++ implementation of the anomaly detection method 
 
 developped in [1][2], which has been studied in details in [3]. The running time is ~17ms
 
