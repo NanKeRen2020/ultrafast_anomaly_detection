@@ -27,7 +27,7 @@ another total different patch search approach.
 
 detection result image
 ![image](https://github.com/NanKeRen2020/anomaly_detection/blob/main/detections.png)
-![image](https://github.com/NanKeRen2020/ultrafsst_anomaly_detection/blob/main/detections1.png)
+![image](https://github.com/NanKeRen2020/ultrafast_anomaly_detection/blob/main/detections1.png)
 
 # Usage
 ========
