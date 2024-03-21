@@ -40,9 +40,11 @@ and faiss library with gpu. You need to check install intruction to
 compile the faiss library[4]. 
 
 
-$ mkdir build; cd build
-$ cmake ..
-$ make
+mkdir build; cd build
+
+cmake ..
+
+make
 
 Binaries will be created in build/bin folder.
 
