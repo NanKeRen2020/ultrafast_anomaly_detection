@@ -53,13 +53,9 @@ parallelization enabled (if your system supports it).
 
 running example:
 
-./bin/anomaly_detection  /home/seeking/test_projects/anomaly_detection/models/deploy.prototxt /home/seeking/test_projects/
+./bin/anomaly_detection  /your_path/deploy.prototxt /your_path/VGG_normalised.caffemodel 1 8 16 /your_path/test1.png -1 
 
-anomaly_detection/models/VGG_normalised.caffemodel 1 8 16 /home/seeking/test_projects/anomaly_detection/datas/test1.png -1 
-
-0 /home/seeking/test_projects/anomaly_detection/results/detections_cpp.png /home/seeking/test_projects/anomaly_detection/
-
-datas/test1.png 2 2
+0 /your_path/detections_cpp.png /your_path/test1.png 2 2
 
 NOTE: Repalce with your own path.
 
