@@ -1,4 +1,4 @@
-An ultrafast nice quasi-generic image anomaly detection method, which 
+An ultrafast C/C++ nice quasi-generic image anomaly detection method, which 
 
 reduce anomaly detection in images to anomaly detection in noise.
 
