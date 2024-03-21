@@ -11,7 +11,6 @@ of the popular pre-trained deep neural network, such as VGG, Resnet, etc.
 
 
 # Overview
-===========
 
 
 This source code provides an ultrafast implementation of the anomaly detection method 
@@ -30,7 +29,6 @@ detection result image
 ![image](https://github.com/NanKeRen2020/ultrafast_anomaly_detection/blob/main/detections1.png)
 
 # Usage
-========
 
 
 The code is compilable on ubuntu1604
@@ -68,8 +66,7 @@ NOTE: Repalce with your own path.
 computes the result using the method and parameters from [2], the caffe model file can download from [3].
 
 
-References
-===========
+# References
 
 [1] https://github.com/NanKeRen2020/anomaly_detection.
 
