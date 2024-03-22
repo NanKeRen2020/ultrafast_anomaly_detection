@@ -24,10 +24,6 @@ This project only open source part of the original implement, you can get the fu
 codes for free to researchers for non-commercial use via email shengqiang8814@qq.com.
 
 
-detection result image
-![image](https://github.com/NanKeRen2020/anomaly_detection/blob/main/detections.png)
-![image](https://github.com/NanKeRen2020/ultrafast_anomaly_detection/blob/main/detections1.png)
-
 # Usage
 
 
@@ -62,6 +58,12 @@ running example:
 NOTE: Repalce with your own path.
 
 computes the result using the method and parameters from [2], the caffe model file can download from [3].
+
+detection result image
+
+![image](https://github.com/NanKeRen2020/anomaly_detection/blob/main/detections.png)
+
+![image](https://github.com/NanKeRen2020/ultrafast_anomaly_detection/blob/main/detections1.png)
 
 
 # References
