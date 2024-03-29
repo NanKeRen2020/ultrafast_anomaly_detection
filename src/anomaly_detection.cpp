@@ -101,10 +101,11 @@ int main(int argc, char **argv)
     std::vector<std::vector<int>> indexes{{index}};
     cv::Mat ref_image = cv::imread(ref_path);
 
-    // define detection object
+    // define detection object 
     AnomalyDetection anomaly_detection(modelParams);
     anomaly_detection.buildTreeModel(ref_image, treeParams, layer_num, indexes);
     
+    //  ultrafast interface 
     // AnomalyDetection anomaly_detection(indexParams);
     // anomaly_detection.addIndexModel(ref_image, layer_num, indexes);
 
@@ -127,7 +128,7 @@ int main(int argc, char **argv)
         if (src_image.empty()) continue;
         std::cout << "===>process image name: " << fn[i] << std::endl;
         show_image = src_image.clone();
-        // apply detection
+        // apply detection, warm up running
         auto start = std::chrono::high_resolution_clock::now();
         std::vector<std::tuple<float, int, int, int>> detections = 
             anomaly_detection.applyTreeDetection(src_image, nfa_thresh, nfa_method, pow_layer);
@@ -136,10 +137,12 @@ int main(int argc, char **argv)
         std::chrono::duration<double> diff = end - start;
         std::cout << "===>total detection time: " << diff.count() << std::endl;
 
+
+        // get average running time
         int run_count = 10;
         for (int i = 0; i < run_count; ++i)
         {
-            // detections = anomaly_detection.applyTreeDetection(src_image, nfa_thresh, nfa_method, pow_layer);
+            detections = anomaly_detection.applyTreeDetection(src_image, nfa_thresh, nfa_method, pow_layer);
             // detections = anomaly_detection.applyIndexDetection(src_image, nfa_thresh, nfa_method, pow_layer, max_distance);        
         }
         auto end1 = std::chrono::high_resolution_clock::now();
